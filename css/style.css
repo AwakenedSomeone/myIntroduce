@@ -1,0 +1,281 @@
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+.wrapper{
+	width: 1120px;
+	margin: 0 auto;
+}
+.nav{
+	width: 100%;
+	padding: 20px;
+	min-height: 30px;
+	background: #1ABC9C;
+	position: relative;
+}
+.left{
+	position: absolute;
+	left:40px;
+	font-size: 24px;
+	color:#fff;
+	font-family: "微软雅黑";
+}
+.right{
+	position: absolute;
+	right:40px;
+}
+.nav li{
+	display: inline-block;
+	margin-right: 20px;
+	line-height: 30px;
+}
+.nav li a{
+	color: #fff;
+}
+.nav li a:hover{
+	color:#000;
+}
+.head{
+	width: 100%;
+	padding: 20px;
+	height: 505px;
+	background: #F2F2F2;
+	position: relative;
+}
+.avatar{
+	width: 200px;
+	height: 250px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin:10px auto;
+}
+.avatar img{
+	border-radius:50%;
+}
+.introduce{
+	display: none;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+}
+.introduce.active{
+	display: block;
+} 
+.show img{
+	/*width: 220px;
+	height: 320px;*/
+	width: 900px;
+	height: 420px;
+}
+.introduce h1{
+	margin-top: 20px;
+	font-size: 35px;
+	color: #333;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+.introduce p{
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 28px;
+	color: #555;
+}
+.content{
+	width: 1160px;
+	position: relative;
+}
+.sample{
+	width: 100%;
+}
+.title{
+	margin-top: 20px;
+	padding-left: 20px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #555;
+	width: 200px;
+	background: #F5F5F5;
+}
+
+.split::after{
+	display: block;
+	content: "";
+	width: 1120px;
+	height: 1px;
+	border-bottom: 1px solid red;
+}
+
+.product{
+	margin-top: 20px;
+	padding: 20px;
+	background: #f7f7f7;
+}
+.product li{
+	float: left;
+	margin: 10px 10px 0 0;
+	color: #555;
+}
+.product li a{
+	display: block;
+	padding: 20px;
+	background: #fff;
+	width: 500px;
+	height: 300px;
+	border:2px solid #dadada;
+}
+.product li a:hover{
+	opacity: 0.8;
+}
+.product li p{
+	margin-top: 10px;
+	font-size: 16px;
+	color: #555;
+	font-weight: 200;
+	text-align: center;
+}
+.items p{
+	margin: 10px;
+	font-size: 18px;
+	color: #555;
+	font-family: "微软雅黑";
+}
+.items li{
+	float: left;
+	padding: 5px;
+	margin: 10px 20px 10px 40px;
+	background: #ccc;
+}
+.items li img:hover{
+	transform: scale(1.2,1.2);
+}
+
+.foot{
+	height: 80px;
+	padding-top: 10px;
+	background: #2F2F2F;
+	text-align: center;
+}
+.foot p{
+	margin-top: 5px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center
+}
+
+@media screen and (max-width: 360px){
+	.wrapper{
+		width: 100%;
+		padding: 0;
+	}
+	.nav,.head{
+		padding: 20px 0;
+	}
+	.head{
+		height: 388px;
+	}
+	.avatar{
+		width: 100px;
+		height: 150px;
+	}
+	.introduce h1{
+		font-size: 24px;
+	}
+	.right{
+		display: none;
+	}
+	.content{
+		width: 100%;
+	}
+	.show img{
+		width: 220px;
+		height: 320px;
+	}
+	.product li a{
+		padding: 10px;
+		width: 280px;
+		height: 150px;
+	}
+	.product li a img{
+		width: 280px;
+		height: 150px;
+	}
+	.split::after{
+		width: 100%;
+	}
+	.items li img{
+		width: 280px;
+	}
+	.items li{
+	margin: 10px 20px 10px 25px;
+}
+}
+
+.prev{
+	position: absolute;
+	width: 25px;
+	height: 100%;
+	left: 10px;
+	top: 0;
+}
+.next{
+	position: absolute;
+	width: 25px;
+	height: 100%;
+	right: 10px;
+	top:0;
+	
+}
+
+.arrowleft{
+	overflow:hidden;
+	width:25px;
+
+}
+
+.arrowleft:before{
+	content:'';
+	height:15px;
+	width:15px;
+	display:block; 
+	border:5px solid rgba(0,0,0,0.4); 
+	border-right-width:0; 
+	border-bottom-width:0; 
+	transform:rotate(-45deg) translateY(-50%);
+	-webkit-transform:rotate(-45deg) translateY(-50%);
+	-moz-transform:rotate(-45deg) translateY(-50%);
+	-o-transform:rotate(-45deg) translateY(-50%);
+	-ms-transform:rotate(-45deg) translateY(-50%); 
+	position:absolute;  
+	left:7px;
+	top:50%;
+	
+}
+
+.arrowright{
+	overflow:hidden; 
+	width:25px;
+}
+
+.arrowright:before{
+	content:''; 
+	height:15px; 
+	width:15px; 
+	display:block; 
+	border:5px solid rgba(0,0,0,0.4); 
+	border-left-width:0; 
+	border-top-width:0; 
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg) translateY(-50%);
+	-moz-transform:rotate(-45deg) translateY(-50%);
+	-o-transform:rotate(-45deg) translateY(-50%);
+	-ms-transform:rotate(-45deg) translateY(-50%); 
+	position:absolute; 
+	top:50%;
+	right:7px;
+}
