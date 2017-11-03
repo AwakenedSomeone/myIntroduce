@@ -41,7 +41,7 @@ $(function(){
 var mq = window.matchMedia('(max-width: 360px)');
 if(mq.matches) {
 	console.log("0");
-    $('.show').find('img').eq(0).attr('src','../images/sell.png');
-    $('.show').find('img').eq(1).attr('src','../images/sell6.png');
+    $('.show').find('img').eq(0).attr('src','images/sell.png');
+    $('.show').find('img').eq(1).attr('src','images/sell6.png');
 } 
 })
